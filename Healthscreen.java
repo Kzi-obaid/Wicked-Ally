@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class HealthCalculator {
+public class HealthScreen {
 
     // Function to calculate BMI
     public static double calculateBMI(double weightKg, double heightFeet) {
@@ -17,4 +17,3 @@ public class HealthCalculator {
             return 88.362 + (13.397 * weightKg) + (4.799 * heightCm) - (5.677 * age);
         }
     }
-222222
