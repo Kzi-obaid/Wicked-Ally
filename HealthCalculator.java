@@ -37,11 +37,7 @@ public class HealthCalculator {
         switch (goalChoice) {
             case 1: // Weight loss
                 double weightLossCalories = maintenanceCalories - 500;
-<<<<<<< HEAD
                 System.out.println("- Target daily calorie intake: " + String.format("%.2f", weightLossCalories) + " kcal.");
-=======
-                System.out.println("- Target daily calorie intake: " + weightLossCalories + " kcal.");
->>>>>>> d49bb2aab3743dce3a103a35896626feb442a768
                 System.out.println("- Suggested exercises:");
                 System.out.println("  1. Cardio (e.g., running, cycling, swimming) for 30-60 minutes, 5 days a week.");
                 System.out.println("  2. Strength training 2-3 days a week to maintain muscle mass.");
@@ -51,18 +47,10 @@ public class HealthCalculator {
                 System.out.println("  Lunch: Grilled chicken salad with olive oil dressing and a side of quinoa.");
                 System.out.println("  Snack: A handful of nuts or a low-calorie protein bar.");
                 System.out.println("  Dinner: Baked fish with steamed vegetables and a small sweet potato.");
-<<<<<<< HEAD
                 break;
             case 2: // Weight gain
                 double weightGainCalories = maintenanceCalories + 500;
                 System.out.println("- Target daily calorie intake: " + String.format("%.2f", weightGainCalories) + " kcal.");
-=======
-    
-                break;
-            case 2: // Weight gain
-                double weightGainCalories = maintenanceCalories + 500;
-                System.out.println("- Target daily calorie intake: " + weightGainCalories + " kcal.");
->>>>>>> d49bb2aab3743dce3a103a35896626feb442a768
                 System.out.println("- Suggested exercises:");
                 System.out.println("  1. Strength training (e.g., weightlifting) 4-5 days a week.");
                 System.out.println("  2. Avoid excessive cardio to conserve calories.");
@@ -75,11 +63,7 @@ public class HealthCalculator {
                 break;
             case 3: // Muscle building
                 double muscleBuildingCalories = maintenanceCalories + 300;
-<<<<<<< HEAD
                 System.out.println("- Target daily calorie intake: " + String.format("%.2f", muscleBuildingCalories) + " kcal.");
-=======
-                System.out.println("- Target daily calorie intake: " + muscleBuildingCalories + " kcal.");
->>>>>>> d49bb2aab3743dce3a103a35896626feb442a768
                 System.out.println("- Suggested exercises:");
                 System.out.println("  1. Resistance training (e.g., weightlifting) 5-6 days a week.");
                 System.out.println("  2. Focus on progressive overload (gradually increase weights).");
@@ -89,10 +73,6 @@ public class HealthCalculator {
                 System.out.println("  Lunch: Grilled chicken, brown rice, and broccoli.");
                 System.out.println("  Snack: Greek yogurt with nuts and honey.");
                 System.out.println("  Dinner: Steak or tofu stir-fry with quinoa and vegetables.");
-<<<<<<< HEAD
-=======
-    
->>>>>>> d49bb2aab3743dce3a103a35896626feb442a768
                 break;
             default:
                 System.out.println("Invalid goal. Please select a valid option.");
@@ -152,18 +132,9 @@ public class HealthCalculator {
         System.out.println("2. Female");
         int genderChoice = scanner.nextInt();
         String gender = (genderChoice == 1) ? "male" : "female";
-<<<<<<< HEAD
 
         // Calculate BMI and display result
         double bmi = calculateBMI(weightKg, heightCm);
-=======
-
-        // Convert height to cm for BMR calculation
-        double heightCm = heightFeet * 30.48;
-
-        // Calculate BMI and display result
-        double bmi = calculateBMI(weightKg, heightFeet);
->>>>>>> d49bb2aab3743dce3a103a35896626feb442a768
 
         // Calculate BMR
         double bmr = calculateBMR(weightKg, heightCm, age, gender);
@@ -199,7 +170,3 @@ public class HealthCalculator {
         scanner.close();
     }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> d49bb2aab3743dce3a103a35896626feb442a768
